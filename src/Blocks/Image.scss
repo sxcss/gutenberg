@@ -1,0 +1,21 @@
+@import '../Base/Base.scss';
+
+.wp-block {
+    
+  &-image {
+
+    figure {
+      @include flex;
+      @include width(100);
+      &.aligncenter {
+        @include justify-content(center);
+      }
+    }
+    &.alignwide {
+      @include justify-content(center);
+      img {
+        @include object-fit(contain);
+      }
+    }
+  }
+}

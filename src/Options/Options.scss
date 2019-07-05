@@ -1,0 +1,54 @@
+@import '../Base/Base.scss';
+
+.alignwide {
+  @include width(100%);
+}
+
+.alignfull {
+  @include width(100%);
+  @include max-width(100vw);
+}
+
+.has-background {
+  &.has-primary-background-color {
+    @include background-color(map-get($color, primary));
+  }
+
+  &.has-secondary-background-color {
+    @include background-color(map-get($color, secondary));
+  }
+
+  &.has-dark-gray-background-color {
+    @include background-color(map-get($color, dark-gray));
+  }
+
+  &.has-light-gray-background-color {
+    @include background-color(map-get($color, light-gray));
+  }
+
+  &.has-white-background-color {
+    @include background-color(white);
+  }
+}
+
+.has-text-color {
+  &.has-primary-color {
+    @include color(map-get($color, primary));
+  }
+
+  &.has-secondary-color {
+    @include color(map-get($color, secondary));
+  }
+
+  &.has-dark-gray-color {
+    @include color(map-get($color, dark-gray));
+  }
+
+  &.has-light-gray-color {
+    @include color(map-get($color, light-gray));
+  }
+
+  &.has-white-color {
+    @include color(white);
+  }
+}

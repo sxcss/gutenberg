@@ -1,0 +1,24 @@
+@import '../Base/Base.scss';
+
+.wp-block {
+
+  &-button {
+
+    @include flex;
+    a {
+      @include btn;
+      width: auto;
+    }
+    &.aligncenter {
+      @include justify-content(center);
+      @include text-align(center);
+      a {
+        @include justify-self(center);
+      }
+    }
+
+    &__link {
+      width: auto;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+@import '../Base/Base.scss';
+
+.wp-block {
+
+  &-columns {
+
+    &.alignwide {
+      @include container-boxed;
+    }
+    &.alignfull {
+      @include width(100);
+      @include max-width(100vw);
+    }
+    &.has {
+      &-2-columns {
+        @include grid-layout(2, 1fr);
+      }
+      &-3-columns {
+        @include grid-layout(3, 1fr);
+      }
+      &-4-columns {
+        @include grid-layout(4, 1fr);
+      }
+      &-5-columns {
+        @include grid-layout(5, 1fr);
+      }
+      &-6-columns {
+        @include grid-layout(6, 1fr);
+      }
+      &-7-columns {
+        @include grid-layout(7, 1fr);
+      }
+      &-8-columns {
+        @include grid-layout(8, 1fr);
+      }
+      &-9-columns {
+        @include grid-layout(9, 1fr);
+      }
+      &-10-columns {
+        @include grid-layout(10, 1fr);
+      }
+      &-11-columns {
+        @include grid-layout(11, 1fr);
+      }
+      &-12-columns {
+        @include grid-layout(12, 1fr);
+      }
+    }
+
+    .wp-block-column {
+
+      > div {
+        &.alignwide {
+          @include width(100% !important);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@import '../Base/Base.scss';
+
+.wp-block {
+
+  &-cover {
+
+    @include height(map-get($size, xxl));
+    @include background-repeat(no-repeat);
+    @include background-size(cover);
+    @include grid;
+    @include place-content(center);
+    &.place-content--start--center {
+      @include place-content(start center);
+    }
+    &.alignwide {
+      @include container-boxed;
+    }
+
+    &__inner-container {
+      @include flex;
+      @include flex-direction(column);
+
+      > * {
+        @include color(white);
+        @include width(100);
+        display: initial;
+      }
+
+      > p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@mixin btn {
+  display: initial;
+  @include width(100);
+  @include height(100);
+  @include background-color(black);
+  @include color(white);
+  @include font-size(map-get($font-size, ms));
+  @include font-weight(map-get($font-weight, medium));
+  @include padding-x(map-get($gap, sm));
+  @include padding-y(map-get($gap, xs));
+  @include margin-x(auto);
+  @include border-radius(map-get($size, xxs));
+  @include transition(all map-get($transition-time, ms) ease-out);
+  @include hover($hover-opacity: map-get($opacity, md));
+}
