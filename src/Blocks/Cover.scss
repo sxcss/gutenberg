@@ -7,7 +7,7 @@
     @include height(map-get($size, xxl));
     @include background-repeat(no-repeat);
     @include background-size(cover);
-    @include grid;
+    @include display(grid);
     @include place-content(center);
     &.place-content--start--center {
       @include place-content(start center);
