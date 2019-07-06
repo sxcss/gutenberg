@@ -3,8 +3,7 @@
 .wp-block {
 
   &-cover {
-
-    @include height(map-deep-get($scale, proportion,xxl));
+    @include min-height(map-deep-get($scale, proportion, lg));
     @include background-repeat(no-repeat);
     @include background-size(cover);
     @include display(grid);
