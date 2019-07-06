@@ -6,10 +6,10 @@
   @include color(white);
   @include font-size(1rem);
   @include font-weight(map-deep-get($font, weight, medium));
-  @include padding-x(map-get($gap, sm));
-  @include padding-y(map-get($gap, xs));
+  @include padding-x(map-deep-get($scale, proportion, sm));
+  @include padding-y(map-deep-get($scale, proportion, xs));
   @include margin-x(auto);
-  @include border-radius(map-get($size, xxs));
-  @include transition(all map-get($transition-time, ms) ease-out);
+  @include border-radius(map-deep-get($scale, proportion, xxs));
+  @include transition(all map-deep-get($transition, duration, ms) ease-out);
   @include hover($hover-opacity: map-get($opacity, md));
 }

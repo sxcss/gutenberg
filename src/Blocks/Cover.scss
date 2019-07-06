@@ -4,7 +4,7 @@
 
   &-cover {
 
-    @include height(map-get($size, xxl));
+    @include height(map-deep-get($scale, proportion,xxl));
     @include background-repeat(no-repeat);
     @include background-size(cover);
     @include display(grid);
