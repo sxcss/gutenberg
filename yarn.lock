@@ -7044,10 +7044,10 @@ svgo@^0.7.0:
     sax "~1.2.1"
     whet.extend "~0.9.9"
 
-sxcss@^1.0.37:
-  version "1.0.37"
-  resolved "https://registry.yarnpkg.com/sxcss/-/sxcss-1.0.37.tgz#6a97d8f13c0125a37cd26ffa107d13f69aed3e3c"
-  integrity sha512-5KBpuuPsi3aLbAfGxReq8emw8EnzqmoVVGmQ/jEd2MpXWaWLz6pmjppqE3A1+GzgNAskbU64eOUhX+HGlZLdBQ==
+sxcss@^1.0.38:
+  version "1.0.38"
+  resolved "https://registry.yarnpkg.com/sxcss/-/sxcss-1.0.38.tgz#d85ff89421d3a520274523179a30d6869c3b1c8b"
+  integrity sha512-UYqLPiE1HFBnlcf5w/rmCq2lkA9Mdz5wKjNvJf0+T0AFMHlZjbWejywESEnJuT7Us10xRs+rEAypFhaHUpeBtw==
   dependencies:
     node-sass "^4.12.0"
     sass-loader "^7.1.0"
