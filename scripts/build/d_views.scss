@@ -1,0 +1,29 @@
+@import '../Base/Base.scss';
+
+.wp-page,
+.page {
+
+  &--no-heading {
+
+    .page__heading {
+      display: none;
+    }
+  }
+
+  &__heading {
+    @include text-align(center);
+    display: none;
+  }
+
+  .section {
+    .column {
+      > div {
+        @include width(100%);
+      }
+    }
+  }
+}
+
+
+@import 'Page.scss';
+@import 'Post.scss';

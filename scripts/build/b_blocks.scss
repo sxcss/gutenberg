@@ -1,0 +1,142 @@
+@import 'Button.scss';
+@import 'Columns.scss';
+@import 'Cover.scss';
+@import 'Image.scss';
+
+@import '../Base/Base.scss';
+
+.wp-block {
+
+  &-button {
+
+    @include flex;
+    a {
+      @include btn;
+      width: auto;
+    }
+    &.aligncenter {
+      @include justify-content(center);
+      @include text-align(center);
+      a {
+        @include justify-self(center);
+      }
+    }
+
+    &__link {
+      width: auto;
+    }
+  }
+}
+
+@import '../Base/Base.scss';
+
+.wp-block {
+
+  &-columns {
+
+    &.alignfull {
+      @include width(100);
+      @include max-width(100vw);
+    }
+    &.has {
+      &-2-columns {
+        @include grid-layout($grid-cols: 2);
+      }
+      &-3-columns {
+        @include grid-layout($grid-cols: 3);
+      }
+      &-4-columns {
+        @include grid-layout($grid-cols: 4);
+      }
+      &-5-columns {
+        @include grid-layout($grid-cols: 5);
+      }
+      &-6-columns {
+        @include grid-layout($grid-cols: 6);
+      }
+      &-7-columns {
+        @include grid-layout($grid-cols: 7);
+      }
+      &-8-columns {
+        @include grid-layout($grid-cols: 8);
+      }
+      &-9-columns {
+        @include grid-layout($grid-cols: 9);
+      }
+      &-10-columns {
+        @include grid-layout($grid-cols: 10);
+      }
+      &-11-columns {
+        @include grid-layout($grid-cols: 11);
+      }
+      &-12-columns {
+        @include grid-layout($grid-cols: 12);
+      }
+    }
+
+    .wp-block-column {
+
+      > div {
+        &.alignwide {
+          @include width(100% !important);
+        }
+      }
+    }
+  }
+}
+
+@import '../Base/Base.scss';
+
+.wp-block {
+
+  &-cover {
+    @include min-height(map-deep-get($scale, proportion, lg));
+    @include background-repeat(no-repeat);
+    @include background-size(cover);
+    @include display(grid);
+    @include place-content(center);
+    &.place-content--start--center {
+      @include place-content(start center);
+    }
+    &.alignwide {
+      @include container-boxed;
+    }
+
+    &__inner-container {
+      @include flex;
+      @include flex-direction(column);
+
+      > * {
+        @include color(white);
+        @include width(100);
+        display: initial;
+      }
+
+      > p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@import '../Base/Base.scss';
+
+.wp-block {
+    
+  &-image {
+
+    figure {
+      @include flex;
+      @include width(100);
+      &.aligncenter {
+        @include justify-content(center);
+      }
+    }
+    &.alignwide {
+      @include justify-content(center);
+      img {
+        @include object-fit(contain);
+      }
+    }
+  }
+}

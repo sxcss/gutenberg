@@ -1,3 +1,6 @@
+@import 'BaseButton.scss';
+@import 'BaseContainer.scss';
+
 @mixin btn {
   display: initial;
   @include width(100);
@@ -11,4 +14,9 @@
   @include margin-x(auto);
   @include border-radius(map-deep-get($scale, proportion, xxs));
   @include transition(all map-deep-get($transition, duration, ms) ease-out);
+}
+
+@mixin container-boxed {
+  @include container;
+  @include boxed;
 }
