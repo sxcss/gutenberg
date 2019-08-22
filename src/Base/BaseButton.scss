@@ -11,5 +11,5 @@
   @include margin-x(auto);
   @include border-radius(map-deep-get($scale, proportion, xxs));
   @include transition(all map-deep-get($transition, duration, ms) ease-out);
-  @include hover($hover-opacity: map-get($opacity, md));
+  @include hover($opacity: map-get($opacity, md));
 }

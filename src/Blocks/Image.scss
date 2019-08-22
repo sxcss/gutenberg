@@ -1,9 +1,5 @@
-@import '../Base/Base.scss';
-
 .wp-block {
-    
   &-image {
-
     figure {
       @include flex;
       @include width(100);

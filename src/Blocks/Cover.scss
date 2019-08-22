@@ -1,7 +1,4 @@
-@import '../Base/Base.scss';
-
 .wp-block {
-
   &-cover {
     @include min-height(map-deep-get($scale, proportion, lg));
     @include background-repeat(no-repeat);

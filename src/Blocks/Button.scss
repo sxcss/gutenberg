@@ -1,9 +1,5 @@
-@import '../Base/Base.scss';
-
 .wp-block {
-
   &-button {
-
     @include flex;
     a {
       @include btn;

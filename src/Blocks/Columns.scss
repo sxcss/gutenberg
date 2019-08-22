@@ -1,9 +1,5 @@
-@import '../Base/Base.scss';
-
 .wp-block {
-
   &-columns {
-
     &.alignfull {
       @include width(100);
       @include max-width(100vw);
@@ -45,7 +41,6 @@
     }
 
     .wp-block-column {
-
       > div {
         &.alignwide {
           @include width(100% !important);
