@@ -3,6 +3,9 @@
 .wp-block {
     
   &-image {
+    img {
+      @include width(100);
+    }
 
     figure {
       @include flex;
