@@ -3,10 +3,13 @@
 .wp-block {
     
   &-image {
+    img {
+			width: auto;
+    }
 
     figure {
       @include flex;
-      @include width(100);
+      @include width(100%);
       &.aligncenter {
         @include justify-content(center);
       }
