@@ -93,7 +93,7 @@
 .wp-block {
   &-image {
 		img {
-      @include width(100);
+			width: auto;
 		}
 	figure {
 	  @include flex;
