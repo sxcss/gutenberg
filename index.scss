@@ -48,8 +48,7 @@
 .wp-block {
   &-columns {
 	&.alignfull {
-	  @include width(100);
-	  @include max-width(100vw);
+	  @include size(100%, $max-x: 100vw);
 	}
 		@include flex
 	}
@@ -60,7 +59,7 @@
 		}
 	  }
 	}
-  }
+}
 
 .wp-block {
   &-cover {
@@ -92,12 +91,12 @@
 
 .wp-block {
   &-image {
-		img {
+	img {
 			width: auto;
-		}
+	}
 	figure {
 	  @include flex;
-	  @include width(100);
+	  @include width(100%);
 	  &.aligncenter {
 		@include justify-content(center);
 	  }
