@@ -1,6 +1,6 @@
 {
   "name": "@sxcss/gutenberg",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "SXCSS-based styling framework for WordPress Gutenberg.",
   "main": "src/main.scss",
   "scripts": {
