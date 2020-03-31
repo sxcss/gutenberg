@@ -366,6 +366,9 @@ input[type=number]::-webkit-outer-spin-button {
   margin-bottom: 0;
 }
 
+.wp-block-image {
+  width: 100%;
+}
 .wp-block-image img {
   width: auto;
 }
@@ -409,7 +412,7 @@ input[type=number]::-webkit-outer-spin-button {
   display: flex;
   align-items: flex-start;
 }
-.is-vertically-aligned-middle {
+.is-vertically-aligned-middle, .is-vertically-aligned-center {
   display: flex;
   align-items: center;
 }
