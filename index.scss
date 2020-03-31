@@ -117,6 +117,28 @@
   @include width(100%);
   @include max-width(100vw);
 }
+.align {
+  &left{
+	@include flex($justify-content: flex-start);
+  }
+  &center{
+	@include flex($justify-content: center);
+  }
+  &right{
+	@include flex($justify-content: flex-end);
+  }
+}
+.is-vertically-aligned {
+  &-top {
+	@include flex($align-items: flex-start);
+  }
+  &-middle {
+	@include flex($align-items: center);
+  }
+  &-bottom {
+	@include flex($align-items: flex-end);
+  }
+}
 
 .wp-page,
 .page {

@@ -392,6 +392,32 @@ input[type=number]::-webkit-outer-spin-button {
   max-width: 100vw;
 }
 
+.alignleft {
+  display: flex;
+  justify-content: flex-start;
+}
+.aligncenter {
+  display: flex;
+  justify-content: center;
+}
+.alignright {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.is-vertically-aligned-top {
+  display: flex;
+  align-items: flex-start;
+}
+.is-vertically-aligned-middle {
+  display: flex;
+  align-items: center;
+}
+.is-vertically-aligned-bottom {
+  display: flex;
+  align-items: flex-end;
+}
+
 .wp-page--no-heading .page__heading,
 .page--no-heading .page__heading {
   display: none;
