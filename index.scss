@@ -16,6 +16,7 @@
   @include border-radius(map-deep-get($scale, proportion, xxs));
   @include transition(all map-deep-get($transition, duration, ms) ease-out);
 }
+
 @mixin container-boxed {
   @include container;
   @include boxed;
@@ -27,139 +28,161 @@
 
 .wp-block {
   &-button {
-	@include flex;
-	a {
-	  @include btn;
-	  width: auto;
-	}
-	&.aligncenter {
-	  @include justify-content(center);
-	  @include text-align(center);
-	  a {
-		@include justify-self(center);
-	  }
-	}
-	&__link {
-	  width: auto;
-	}
+		@include flex;
+
+		a {
+			@include btn;
+			width: auto;
+		}
+
+		&.aligncenter {
+			@include justify-content(center);
+			@include text-align(center);
+			a {
+			@include justify-self(center);
+			}
+		}
+
+		&__link {
+			width: auto;
+		}
   }
 }
 
 .wp-block {
   &-columns {
-	&.alignfull {
-	  @include size(100%, $max-x: 100vw);
-	}
-		@include flex
-	}
-	.wp-block-column {
-	  > div {
-		&.alignwide {
-		  @include width(100% !important);
+		@include flex;
+
+		&.alignfull {
+			@include size(100%, $max-x: 100vw);
 		}
-	  }
+
+		.wp-block-column {
+			@include size($x: 100%);
+			@include margin($right: 32px, $last-right: 0);
+	
+			> div {
+				&.alignwide {
+					@include width(100% !important);
+				}
+			}
+		}
 	}
 }
 
 .wp-block {
   &-cover {
-	@include min-height(map-deep-get($scale, proportion, lg));
-	@include background-repeat(no-repeat);
-	@include background-size(cover);
-	@include display(grid);
-	@include place-content(center);
-	&.place-content--start--center {
-	  @include place-content(start center);
-	}
-	&.alignwide {
-	  @include container-boxed;
-	}
-	&__inner-container {
-	  @include flex;
-	  @include flex-direction(column);
-	  > * {
-		@include color(white);
-		@include width(100);
-		display: initial;
-	  }
-	  > p {
-		margin-bottom: 0;
-	  }
-	}
+		@include min-height(map-deep-get($scale, proportion, lg));
+		@include background-repeat(no-repeat);
+		@include background-size(cover);
+		@include display(grid);
+		@include place-content(center);
+
+		&.place-content--start--center {
+			@include place-content(start center);
+		}
+
+		&.alignwide {
+			@include container-boxed;
+		}
+
+		&__inner-container {
+			@include flex;
+			@include flex-direction(column);
+			> * {
+			@include color(white);
+			@include width(100);
+			display: initial;
+			}
+			> p {
+			margin-bottom: 0;
+			}
+		}
   }
 }
 
 .wp-block {
   &-image {
-	width: 100%;
-	img {
-			width: auto;
-	}
-	figure {
-	  @include flex;
-	  @include width(100%);
-	  &.aligncenter {
-		@include justify-content(center);
-	  }
-	}
-	&.alignwide {
-	  @include justify-content(center);
-	  img {
-		@include object-fit(contain);
-	  }
-	}
+		width: 100%;
+
+		img {
+				width: auto;
+		}
+
+		figure {
+			@include flex;
+			@include width(100%);
+			&.aligncenter {
+			@include justify-content(center);
+			}
+		}
+
+		&.alignwide {
+			@include justify-content(center);
+
+			img {
+				@include object-fit(contain);
+			}
+		}
   }
 }
 
 .alignwide {
   @include width(100%);
 }
+
 .alignfull {
   @include width(100%);
   @include max-width(100vw);
 }
+
 .align {
   &left{
-	@include flex($justify-content: flex-start);
-  }
+		@include flex($justify-content: flex-start);
+	}
+	
   &center{
-	@include flex($justify-content: center);
-  }
+		@include flex($justify-content: center);
+	}
+	
   &right{
-	@include flex($justify-content: flex-end);
-  }
+		@include flex($justify-content: flex-end);
+	}
 }
+
 .is-vertically-aligned {
   &-top {
-	@include flex($align-items: flex-start);
-  }
+		@include flex($align-items: flex-start);
+	}
+	
   &-middle,
   &-center {
-	@include flex($align-items: center);
-  }
+		@include flex($align-items: center);
+	}
+	
   &-bottom {
-	@include flex($align-items: flex-end);
+		@include flex($align-items: flex-end);
   }
 }
 
 .wp-page,
 .page {
   &--no-heading {
-	.page__heading {
-	  display: none;
+		.page__heading {
+			display: none;
+		}
 	}
-  }
+	
   &__heading {
-	@include text-align(center);
-	display: none;
-  }
-  .section {
-	.column {
-	  > div {
-		@include width(100%);
-	  }
+		@include text-align(center);
+		display: none;
 	}
+	
+  .section {
+		.column {
+			> div {
+				@include width(100%);
+			}
+		}
   }
 }
-
-
