@@ -60,6 +60,10 @@
 		.wp-block-column {
 			@include size($x: 100%);
 			@include margin($right: 32px, $last-right: 0);
+
+			@include media('<=md'){
+				@include margin($right: 0);
+			}
 	
 			> div {
 				&.alignwide {
