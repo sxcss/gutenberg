@@ -1,0 +1,7 @@
+@import "../Base/Base.scss";
+
+@media all and (max-width: 767px) {
+  .wp-block-table {
+    width: 100%;
+  }
+}
