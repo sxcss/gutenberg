@@ -156,25 +156,16 @@
 
 .is-vertically-aligned {
   &-top {
-		@include flex($align-items: flex-start);
-		@include media('<=md'){
-			flex-direction: column;
-		}
+		@include flex($direction: column, $justify-content: flex-start);
 	}
 	
   &-middle,
   &-center {
-		@include flex($align-items: center);
-		@include media('<=md'){
-			flex-direction: column;
-		}
+		@include flex($direction: column, $justify-content: center);
 	}
 	
   &-bottom {
-		@include flex($align-items: flex-end);
-		@include media('<=md'){
-			flex-direction: column;
-		}
+		@include flex($direction: column, $justify-content: flex-end);
   }
 }
 
