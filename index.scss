@@ -169,6 +169,14 @@
   }
 }
 
+.wp-block-embed {
+	&.alignwide, &.alignfull {
+		iframe {
+			width: 100%;
+		}
+	}
+}
+
 .wp-page,
 .page {
   &--no-heading {
