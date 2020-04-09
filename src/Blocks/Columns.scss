@@ -12,6 +12,7 @@
 
   .wp-block-column {
     @include flex;
+    max-width: 50%;
     flex-direction: column;
 
     > div {
