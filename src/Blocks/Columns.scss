@@ -8,16 +8,15 @@
     &.alignfull {
       @include size(100%, $max-x: 100vw);
     }
-  }
 
-  .wp-block-column {
-    @include flex;
-    max-width: 50%;
-    flex-direction: column;
-
-    > div {
-      &.alignwide {
-        @include width(100% !important);
+    .wp-block-column {
+      @include flex($direction: column);
+      max-width: 50%;
+  
+      > div {
+        &.alignwide {
+          @include width(100% !important);
+        }
       }
     }
   }
