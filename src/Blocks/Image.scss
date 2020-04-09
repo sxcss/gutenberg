@@ -22,4 +22,12 @@
       }
     }
   }
+
+  &-embed {
+    &.alignwide, &.alignfull {
+      iframe {
+        width: 100%;
+      }
+    }
+  }
 }
