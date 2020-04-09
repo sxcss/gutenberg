@@ -52,14 +52,13 @@
 	&.alignfull {
 	  @include size(100%, $max-x: 100vw);
 	}
-  }
-  .wp-block-column {
-	@include flex;
-	max-width: 50%;
-	flex-direction: column;
-	> div {
-	  &.alignwide {
-		@include width(100% !important);
+	.wp-block-column {
+	  @include flex($direction: column);
+	  max-width: 50%;
+	  > div {
+		&.alignwide {
+		  @include width(100% !important);
+		}
 	  }
 	}
   }
@@ -148,14 +147,14 @@
 }
 .is-vertically-aligned {
   &-top {
-	@include flex($direction: column, $justify-content: flex-start);
+	justify-content: flex-start;
   }
   &-middle,
   &-center {
-	@include flex($direction: column, $justify-content: center);
+	justify-content: center;
   }
   &-bottom {
-	@include flex($direction: column, $justify-content: flex-end);
+	justify-content: flex-end;
   }
 }
 

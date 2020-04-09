@@ -318,12 +318,12 @@ input[type=number]::-webkit-outer-spin-button {
   height: 100%;
   max-width: 100vw;
 }
-.wp-block .wp-block-column {
+.wp-block-columns .wp-block-column {
   display: flex;
-  max-width: 50%;
   flex-direction: column;
+  max-width: 50%;
 }
-.wp-block .wp-block-column > div.alignwide {
+.wp-block-columns .wp-block-column > div.alignwide {
   width: 100% !important;
 }
 
@@ -418,18 +418,12 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .is-vertically-aligned-top {
-  display: flex;
-  flex-direction: column;
   justify-content: flex-start;
 }
 .is-vertically-aligned-middle, .is-vertically-aligned-center {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 .is-vertically-aligned-bottom {
-  display: flex;
-  flex-direction: column;
   justify-content: flex-end;
 }
 
