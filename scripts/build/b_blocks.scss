@@ -42,6 +42,7 @@
 
   .wp-block-column {
     @include flex;
+    max-width: 50%;
     flex-direction: column;
 
     > div {
@@ -107,6 +108,14 @@
       @include justify-content(center);
       img {
         @include object-fit(contain);
+      }
+    }
+  }
+
+  &-embed {
+    &.alignwide, &.alignfull {
+      iframe {
+        width: 100%;
       }
     }
   }
