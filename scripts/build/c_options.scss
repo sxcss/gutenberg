@@ -23,13 +23,13 @@
 
 .is-vertically-aligned {
   &-top {
-    @include flex($direction: column, $justify-content: flex-start);
+    justify-content: flex-start;
   }
   &-middle,
   &-center {
-    @include flex($direction: column, $justify-content: center);
+    justify-content: center;
   }
   &-bottom {
-    @include flex($direction: column, $justify-content: flex-end);
+    justify-content: flex-end;
   }
 }
