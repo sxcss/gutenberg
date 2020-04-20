@@ -313,6 +313,13 @@ input[type=number]::-webkit-outer-spin-button {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 980px) {
+  .wp-block-columns {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
 .wp-block-columns.alignfull {
   width: 100%;
   height: 100%;
@@ -322,6 +329,11 @@ input[type=number]::-webkit-outer-spin-button {
   display: flex;
   flex-direction: column;
   max-width: 50%;
+}
+@media (max-width: 980px) {
+  .wp-block-columns .wp-block-column {
+    max-width: unset;
+  }
 }
 .wp-block-columns .wp-block-column > div.alignwide {
   width: 100% !important;

@@ -49,12 +49,20 @@
   &-columns {
 	@include flex;
 	justify-content: space-between;
+	@include media('<=md'){
+	  flex-direction: column;
+	  justify-content: flex-start;
+	  align-items: center;
+	}
 	&.alignfull {
 	  @include size(100%, $max-x: 100vw);
 	}
 	.wp-block-column {
 	  @include flex($direction: column);
 	  max-width: 50%;
+	  @include media('<=md'){
+		max-width: unset;
+	  }
 	  > div {
 		&.alignwide {
 		  @include width(100% !important);
