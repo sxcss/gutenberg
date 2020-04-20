@@ -311,7 +311,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .wp-block-columns {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .wp-block-columns.alignfull {
   width: 100%;
