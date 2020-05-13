@@ -1,11 +1,15 @@
 @import '../Base/Base.scss';
 
 .wp-block {
-    
   &-image {
     width: 100%;
+    @include media('<=md') {
+      display: flex;
+      justify-content: center;
+    }
+
     img {
-			width: auto;
+      width: auto;
     }
 
     figure {
@@ -24,7 +28,12 @@
   }
 
   &-embed {
-    &.alignwide, &.alignfull {
+    @include media('<=md') {
+      flex-direction: column;
+      justify-content: center;
+    }
+    &.alignwide,
+    &.alignfull {
       iframe {
         width: 100%;
       }
